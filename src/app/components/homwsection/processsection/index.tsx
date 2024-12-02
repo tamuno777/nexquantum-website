@@ -44,7 +44,7 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section className="bg-black text-white mt-6">
+    <section className="bg-black text-white mt-6 py-6">
       {/* Section Header */}
       <div className="text-center mb-16 ">
         <h2
@@ -66,7 +66,7 @@ const ProcessSection = () => {
         </p>
       </div>
 
-      <div className="flex flex-col lg:gap-0 gap-8  px-6 lg:px-24">
+      <div className="flex flex-col lg:gap-0 gap-8  px-6 lg:px-24 ">
         {steps.map((step, index) => (
           <div
           data-aos="zoom-in"
@@ -76,7 +76,7 @@ const ProcessSection = () => {
             } items-center lg:items-start gap-8`}
             style={{ width: "100%" }}
           >
-            <div className="flex gap-4" style={{ width: "50%" }}>
+            <div className="flex gap-4 w-[90%] lg:w-[50%] " >
               {/* Image */}
               <div className="lg:w-1/2 flex justify-center ">
                 <img

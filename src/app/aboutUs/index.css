@@ -72,6 +72,8 @@ p {
   display: block;
   width: 100%;
   height: auto;
+  overflow: hidden;
+
 }
 .wave-divider svg path {
   animation: waveAnimation 10s infinite linear;
@@ -114,3 +116,8 @@ p {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 768px) {
+  .wave-divider {
+    margin-top: -1.5px;
+  }
+}
