@@ -8,14 +8,12 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 const Footer = () => {
-  const logoSrc =
-    "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,fit=crop,q=95/m2Wpx8O7ByS1Xvg5/blue-and-white-modern-company-logo-2-dOqyOa9N0PfOoNwX.png";
   return (
     <footer className="bg-brandBlue text-white py-6 px-6 lg:px-24">
       <div className="flex justify-between flex-wrap">
         <div>
           <Link href="/">
-            <Image src={logoSrc} alt="Logo" width={100} height={25} />
+            <Image src="/images/logo.png" alt="Logo" width={100} height={25} />
           </Link>{" "}
           <p className=" text-white ">
             Creating innovative solutions tailored to your <br />   business needs. 

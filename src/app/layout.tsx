@@ -38,7 +38,6 @@ export default function RootLayout({
       >
        
           <Header
-            logoSrc="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,fit=crop,q=95/m2Wpx8O7ByS1Xvg5/blue-and-white-modern-company-logo-2-dOqyOa9N0PfOoNwX.png"
             navLinks={[
               { label: "Home", href: "/" },
               { label: "About", href: "/aboutUs" },

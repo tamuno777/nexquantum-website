@@ -13,11 +13,10 @@ export type NavLink = {
 };
 
 export type HeaderProps = {
-  logoSrc: string;
   navLinks: NavLink[];
 };
 
-export const Header: React.FC<HeaderProps> = ({ logoSrc, navLinks }) => {
+export const Header: React.FC<HeaderProps> = ({  navLinks }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -39,12 +38,12 @@ export const Header: React.FC<HeaderProps> = ({ logoSrc, navLinks }) => {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 px-6  sm:px-8 lg:px-12 ${
         isSticky ? "bg-brandBlue text-white shadow-md" : "bg-transparent"
-      }`}
+      }`} 
     >
       <div className="flex justify-between items-center   w-[100%]">
         {/* Logo */}
         <Link href="/">
-          <Image src={logoSrc} alt="Logo" width={100} height={25} />
+          <Image src="/images/logo.png" alt="Logo" width={100} height={25} />
         </Link>
 
         {/* Navigation */}
