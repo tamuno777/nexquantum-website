@@ -75,7 +75,7 @@ p {
   height: auto;
 }
 @media (max-width: 768px) {
-  .wave-divider {
-    margin-top: -1.5px;
+  .wave-divider svg {
+    margin-top : -5px;
   }
 }
