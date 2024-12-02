@@ -1,17 +1,20 @@
 "use client";
 import React, { useEffect } from "react";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 const ContactUsSection = () => {
   useEffect(() => {
-    AOS.init({
-      duration: 1200,
-      easing: "ease-out-cubic",
-      once: false,
-      mirror: true,
-    });
+    (async () => {
+      if (typeof window !== "undefined") {
+        const AOS = (await import("aos")).default; 
+        AOS.init({
+          duration: 1200,
+          easing: "ease-out-cubic",
+          once: true,
+        });
+      }
+    })();
   }, []);
   return (
     <section className="bg-gray-100 text-black mt-6 pb-16">
@@ -25,14 +28,10 @@ const ContactUsSection = () => {
         <h1 className="text-3xl md:text-4xl font-bold leading-snug ">
           Get in touch<span className="text-customPink"> with Us</span>
         </h1>
-        {/* <p className="mt-4 text-gray-400 max-w-3xl mx-auto  px-6 lg:px-24">
-          Have questions or need assistance? We're here to help! Reach out to us
-          through the form below or use our contact details.
-        </p> */}
+      
       </div>
 
-      {/* Contact Section Content */}
-      {/* <div className="max-w-7xl mx-auto"> */}
+
       <div className="flex flex-wrap lg:flex-nowrap gap-12 items-center px-6 lg:px-24 ">
         <div className="w-full lg:w-3/5 bg-transparent p-8 rounded-lg shadow-lg">
           <form className="space-y-6">

@@ -1,5 +1,5 @@
 
-import Welcome from "./(pages)/page";
+import Welcome from "./Welcome/page";
 
 
 
