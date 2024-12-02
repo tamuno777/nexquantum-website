@@ -8,17 +8,20 @@ import ServicesSection from "../components/homwsection/servicesection";
 import ProcessSection from "../components/homwsection/processsection";
 import TestimonialSection from "../components/homwsection/testimonial";
 import ContactUsSection from "../components/homwsection/contactsection";
-
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Welcome = () => {
   useEffect(() => {
-    AOS.init({
-      duration: 1200,
-      easing: "ease-out-cubic",
-      once: true,
-    });
+    (async () => {
+      if (typeof window !== "undefined") {
+        const AOS = (await import("aos")).default; 
+        AOS.init({
+          duration: 1200,
+          easing: "ease-out-cubic",
+          once: true,
+        });
+      }
+    })();
   }, []);
   return (
     <>
