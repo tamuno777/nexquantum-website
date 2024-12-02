@@ -1,0 +1,116 @@
+.Contact-section {
+  /* height: 70dvh; */
+}
+
+.hero-content {
+  max-width: 100%;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.hero-image .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, #001d5b, #ed51c2, #000887);
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.wave-gradient {
+  fill: linear-gradient(to right, #1e3a8a);
+}
+/* General Styles */
+.welcome-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.hero-image {
+  z-index: 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 5rem);
+  line-height: 1.2;
+  margin: 0 auto;
+}
+
+p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: clamp(0.9rem, 2vw, 1.25rem);
+}
+
+/* Button Styling */
+.cta-button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #fff;
+  color: #000;
+  border-radius: 999px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Wave Divider */
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.wave-divider svg path {
+  animation: waveAnimation 10s infinite linear;
+}
+
+@keyframes waveAnimation {
+  0% {
+    d: path("M0,96L24,112C48,...");
+  }
+  50% {
+    d: path("M0,80L30,100C50,...");
+  }
+  100% {
+    d: path("M0,96L24,112C48,...");
+  }
+}
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  /* color: #333; */
+  margin-bottom: 1.5rem;
+}
+
+/* .text-gradient {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.feature-card,
+.achievement-card,
+.team-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover,
+.achievement-card:hover,
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
