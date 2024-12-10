@@ -19,8 +19,8 @@ const geistMono = localFont({
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'NexQuantum - Innovative Technology Solutions',
-  description: 'Welcome to NexQuantum, your go-to platform for innovative technology solutions.',
+  title: 'ODD Network - Innovative Technology Solutions',
+  description: 'Welcome to ODD Network, your go-to platform for innovative technology solutions.',
 };
 export const viewport = {
   width: 'device-width',
