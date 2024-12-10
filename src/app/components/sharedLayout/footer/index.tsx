@@ -87,7 +87,7 @@ Contact us for   <br /> website development,
             </li>
             <li>
               <p className="flex items-center space-x-2">
-                <a href="mailto:davisbeulah07@gmail.com">davisbeulah7@gmail.com</a>
+                <a href="mailto:davisbeulah07@gmail.com">davisbeulah07@gmail.com</a>
               </p>
             </li>
             <li>
