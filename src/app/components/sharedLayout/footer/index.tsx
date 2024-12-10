@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="flex justify-between flex-wrap">
         <div>
           <Link href="/">
-            <Image src="/images/logo.jpg" alt="Logo" width={100} height={25} />
+            <Image src="/images/logo.png" alt="Logo" width={100} height={25} />
           </Link>{" "}
           <p className=" text-white ">
             Creating innovative solutions tailored to your <br />   business needs. 
