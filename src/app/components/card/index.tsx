@@ -39,20 +39,20 @@ const CardsSection = () => {
         data-aos="fade-up"
           Icon={FaNetworkWired}
           title="Consulting"
-          description="At NexQuantum, we believe strategic IT consulting can unlock your business’s potential, driving growth and efficiency through tailored solutions in technology and cybersecurity."
+          description="At ODD Network, we believe strategic IT consulting can unlock your business’s potential, driving growth and efficiency through tailored solutions in technology ."
         />
         <Card
         data-aos="fade-up"
           Icon={FaCode}
           title="Software Development"
-          description="At NexQuantum, we specialize in custom software development including website creation, delivering tailored solutions that streamline operations, enhance efficiency, and drive growth for your business."
+          description="At ODD Network, we specialize in custom software development including website creation, delivering tailored solutions that streamline operations, enhance efficiency, and drive growth for your business."
         />
         <Card
         data-aos="fade-up"
           Icon={FaDesktop}
-          title="Remote Desktop"
-          description= "At NexQuantum, we harness the power of remote computing to deliver scalable, efficient, and secure solutions that empower your business to operate seamlessly from anywhere, ensuring productivity and innovation without boundaries."
-          // "At NexQuantum, we create custom websites that are visually stunning, user-friendly, and optimized for performance, helping your business make a lasting online impact."
+          title="Website Devlopment"
+          description= "At ODD Network, we harness the power of technology in creating custom websites  to deliver scalable, efficient, high converting  and secure solutions that empower your business to operate seamlessly from anywhere, ensuring productivity and innovation without boundaries."
+          // "At ODD Network, we create custom websites that are visually stunning, user-friendly, and optimized for performance, helping your business make a lasting online impact."
         />
       </div>
     </div>

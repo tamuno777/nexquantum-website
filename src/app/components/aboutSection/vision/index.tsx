@@ -52,7 +52,7 @@ const VisionMissionSection = () => {
             <div className="text-center md:text-left">
               <h2 className="text-4xl font-bold mb-4">Our Mission</h2>
               <p className="text-white text-lg">
-                At NexQuantum, our mission is to empower businesses with
+                At ODD Network, our mission is to empower businesses with
                 innovative IT solutions that bridge technology and business,
                 driving growth, efficiency, and long-term value through
                 collaboration and excellence.

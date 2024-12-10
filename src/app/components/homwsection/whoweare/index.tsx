@@ -28,7 +28,7 @@ const WhoWeAreSection = () => {
           <h1 className="text-2xl md:text-4xl font-bold leading-snug ">
             At{" "}
             <span className="text-customPink" style={{ color: " #ed51c2" }}>
-              NexQuantum
+              ODD Network
             </span>
             , we are a team of dedicated technology professionals passionate
             about driving innovation and creating meaningful solutions.
@@ -46,7 +46,7 @@ const WhoWeAreSection = () => {
           <img
           ata-aos="zoom-in"
             src={why.src}
-            alt="Why NexQuantum"
+            alt="Why ODD Network"
             className="w-full h-full object-cover rounded-lg"
           />
         </div>
@@ -73,7 +73,7 @@ const WhoWeAreSection = () => {
                 style={{ color: "rgb(0, 8, 135)" }}
               />
               <p>
-                Whether it’s custom websites, mobile apps, or cybersecurity, we
+                Whether it’s custom websites, mobile apps,web application, or Software, we
                 deliver excellence.
               </p>
             </div>
@@ -92,14 +92,14 @@ const WhoWeAreSection = () => {
 
         {/* Signature */}
         <div className="text-center md:text-left">
-          <p className="text-lg font-bold">Jon Leposky</p>
-          <p className="text-gray-400">CEO, NexQuantum</p>
+          <p className="text-lg font-bold">Winnie Davis</p>
+          <p className="text-gray-400">CEO, ODD Network</p>
           <div className="mt-4 flex items-center">
             <p
               className="text-customPink font-handwriting text-2xl"
               style={{ color: " #ed51c2" }}
             >
-              Jon Leposky
+              Winnie Davis
             </p>
             <img
               src={signature.src}

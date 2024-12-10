@@ -101,7 +101,7 @@ const ContactUsSection = () => {
             <FaPhoneAlt className="text-brandBlue text-2xl" />
 
             <div>
-              <h3 className="text-lg font-semibold mb-2">+1 (483) 299 1400</h3>
+              <h3 className="text-lg font-semibold mb-2">+234 7014042999</h3>
               <p className="text-gray-400">
                 Call us directly if you need any urgent help. Our agents will
                 help you.
@@ -114,7 +114,7 @@ const ContactUsSection = () => {
 
             <div>
               <h3 className="text-lg font-semibold mb-2">
-                support@company.com
+                davisbeulah07@gmail.com
               </h3>
               <p className="text-gray-400">
                 Email us directly if you need any help. Our agents will assist

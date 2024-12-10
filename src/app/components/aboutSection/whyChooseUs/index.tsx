@@ -17,25 +17,25 @@ const WhyChooseUs = () => {
       icon: "/images/GCicon.svg",
       title: "Global Experience",
       description:
-        "WNexQuantum leverages global experience to provide tailored, innovative IT solutions for businesses worldwide.",
+        "ODD Network leverages global experience to provide tailored, innovative IT solutions for businesses worldwide.",
     },
     {
       icon: "/images/Qicon.svg",
       title: "Quality For Value",
       description:
-        "NexQuantum delivers high-quality IT solutions that maximize value, ensuring businesses achieve the best results with optimal efficiency.",
+        "ODD Network delivers high-quality IT solutions that maximize value, ensuring businesses achieve the best results with optimal efficiency.",
     },
     {
       icon: "/images/Sicon.svg",
       title: "Support",
       description:
-        "NexQuantum provides unwavering support, offering expert assistance to ensure seamless integration and ongoing success for businesses worldwide.",
+        "ODD Network provides unwavering support, offering expert assistance to ensure seamless integration and ongoing success for businesses worldwide.",
     },
     {
       icon: "/images/HSicon.svg",
       title: "High Standards",
       description:
-        "NexQuantum adheres to the highest industry standards, ensuring reliable, secure, and innovative IT solutions that meet global best practices.",
+        "ODD Network adheres to the highest industry standards, ensuring reliable, secure, and innovative IT solutions that meet global best practices.",
     },
   ];
 

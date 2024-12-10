@@ -40,7 +40,7 @@ const Welcome = () => {
             <p className="mt-6 text-white text-opacity-80 font-sans text-base leading-7 md:text-lg">
               At{" "}
               <span className="font-serif italic font-semibold">
-                NexQuantum
+                ODD Network
               </span>
               , we combine quantum computing, innovative design, and tailored IT
               solutions to help your business thrive in a competitive world.

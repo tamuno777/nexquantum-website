@@ -43,7 +43,7 @@ export const Header: React.FC<HeaderProps> = ({  navLinks }) => {
       <div className="flex justify-between items-center   w-[100%]">
         {/* Logo */}
         <Link href="/">
-          <Image src="/images/logo.png" alt="Logo" width={100} height={25} />
+          <Image src="/images/logo.jpg" alt="Logo" width={100} height={25} />
         </Link>
 
         {/* Navigation */}
