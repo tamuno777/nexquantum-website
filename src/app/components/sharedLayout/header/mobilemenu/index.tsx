@@ -18,7 +18,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
   navLinks,
 }) => {
   return (
-    <div className="fixed inset-0 bg-gray-900 text-white z-20 flex flex-col space-y-4 p-6 md:hidden">
+    <div className="fixed inset-0 bg-gray-900 text-white z-20 flex flex-col space-y-4 p-6 md:hidden w-1/2">
       <button onClick={toggleMenu} className="self-end text-lg">
         X
       </button>
