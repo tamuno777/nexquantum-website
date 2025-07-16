@@ -29,20 +29,20 @@ const Achievement = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
           {[
             {
-              title: "30+",
+              title: "20+",
               subtitle: "Qualified employees",
-              text: "Not only is our team full of professionals – we're a fun bunch, too.",
+              text: "Not only is our team full of professionals  we're a fun bunch, too.",
             },
 
             {
-              title: "300+",
+              title: "100+",
               subtitle: "Projects Delivered",
               text: "Last year, we successfully completed over 100 individual projects worldwide.",
             },
             {
               title: "8.9",
               subtitle: "Client Rating",
-              text: "Not only is our team full of professionals – we're a fun bunch, too.",
+              text: "Not only is our team full of professionals  we're a fun bunch, too.",
             },
             {
               title: "10",

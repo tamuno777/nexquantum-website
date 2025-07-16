@@ -20,31 +20,37 @@ const FAQ = () => {
   }, []);
 
   const faqs = [
-    {
-      question: "What services do you offer?",
-      answer:
-        "We offer a variety of services, including web development, app design, and digital marketing.",
-    },
-    {
-      question: "How can I contact support?",
-      answer:
-        "You can contact support by emailing sales@nexqunatum.co.uk or calling us directly at +1 (483) 299 1400.",
-    },
-    {
-      question: "What are your business hours?",
-      answer: "Our business hours are Monday to Friday, 9 AM to 5:30 PM.",
-    },
-    {
-      question: "Do you provide custom solutions?",
-      answer:
-        "Yes, we specialize in creating tailored solutions to meet your specific needs.",
-    },
-    {
-      question: "How can I request a quote?",
-      answer:
-        "You can request a quote by filling out the form on our Contact Us page.",
-    },
-  ];
+  {
+    question: "What services does ODD Network offer?",
+    answer:
+      "We specialize in website design and development, mobile app development, and contract-based web application solutions. We also offer consultation and support to help bring your digital vision to life.",
+  },
+  {
+    question: "How can I reach your team for support or inquiries?",
+    answer:
+      "You can contact us directly at oddnetwork.tech@gmail.com or reach out via the contact form on our website. We typically respond within 24 hours.",
+  },
+  {
+    question: "What are your working hours?",
+    answer:
+      "Our team is available Monday through Friday, from 9:00 AM to 5:30 PM (WAT). For urgent project needs, extended support can be arranged.",
+  },
+  {
+    question: "Do you provide custom-built solutions?",
+    answer:
+      "Absolutely. Every project at ODD Network is tailored to the client's needs from strategy to deployment ensuring you get a solution that fits your brand and goals perfectly.",
+  },
+  {
+    question: "How long does it take to deliver a project?",
+    answer:
+      "Project delivery time varies based on scope. Simple websites take 1–2 weeks, while mobile apps and web applications typically require 5–8 weeks. We provide a detailed timeline after your initial consultation.",
+  },
+  {
+    question: "How do I request a project quote?",
+    answer:
+      "Visit our Contact page and fill out the project inquiry form with your details. A member of our team will get in touch with a tailored proposal.",
+  },
+];
 
   return (
     <section className="bg-gray-100 text-black faq-section pb-16">

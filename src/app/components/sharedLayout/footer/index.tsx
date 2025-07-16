@@ -3,104 +3,69 @@ import {
   FaTwitter,
   FaLinkedinIn,
   FaInstagram,
-  FaGithub,
+  FaWhatsapp,
 } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <footer className="bg-brandBlue text-white py-6 px-6 lg:px-24">
-      <div className="flex justify-between flex-wrap">
-        <div>
-          <Link href="/">
-            <Image src="/images/logo.png" alt="Logo" width={100} height={25} />
-          </Link>{" "}
-          <p className=" text-white ">
-            Creating innovative solutions tailored to your <br />   business needs. 
-Contact us for   <br /> website development,  
-            , and web
-            solutions.
+    <footer className="bg-brandBlue text-white text-left py-6 px-6 lg:px-24">
+      <div className="pl-0 lg:pl-6">
+        <Link href="/">
+          <Image src="/images/logo.png" alt="Logo" width={100} height={25} />
+        </Link>
+      </div>
+      <div className="flex flex-col lg:flex-row items-start gap-12">
+        {/* Logo and Description */}
+        <div className="w-full lg:w-1/2 text-left">
+
+          <p className="text-white  text-left mt-4">
+            At <strong>ODD Network</strong>, we craft innovative digital solutions tailored to your unique business goals. <br />
+            From custom website development to mobile and web application services, <br />
+            we’re your trusted partner for future-ready, high-performance technology.
           </p>
-          <div className="flex mt-6 space-x-4">
-            <a
-              href="https://github.com/tamuno777"
-              className="bg-customPink text-gray-900 p-2 rounded-full hover:bg-teal-500"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://x.com/niedavies"
-              className="bg-customPink text-gray-900 p-2 rounded-full hover:bg-teal-500"
-            >
-              <FaTwitter />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/winnie-davis-1aa069246"
-              className="bg-customPink text-gray-900 p-2 rounded-full hover:bg-teal-500"
-            >
-              <FaLinkedinIn />
-            </a>
-            <a
-              href="#"
-              className="bg-customPink text-gray-900 p-2 rounded-full hover:bg-teal-500"
-            >
-              <FaInstagram />
-            </a>
+        </div>
+        <div className="flex justify-between w-full lg:w-1/3 flex-col gap-5  lg:flex-row">
+          {/* Navigation Links */}
+          <div className="w-full lg:w-1/3">
+            <h3 className="text-lg font-semibold text-customPink">Quick Links</h3>
+            <ul className="mt-4 space-y-2 text-left">
+              <li className=""><a href="/aboutUs" className="hover:text-customPink text-base font-medium">About Us</a></li>
+              <li><a href="/services" className="hover:text-customPink text-base font-medium">Services</a></li>
+              <li><a href="/contact" className="hover:text-customPink text-base font-medium">Contact Us</a></li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div className="w-full lg:w-1/3">
+            <h3 className="text-lg font-semibold text-customPink">Contact Us</h3>
+            <ul className="mt-4 space-y-2 text-left">
+              <li>
+                <a href="mailto:oddnetwork.tech@gmail.com" className=" text-base font-medium hover:text-customPink">
+                  oddnetwork.tech@gmail.com
+                </a>
+              </li>
+              <li className="text-base font-medium">
+                <span>Remote <br /> Worldwide.</span>
+              </li>
+            </ul>
           </div>
         </div>
 
-        {/* Navigation Links */}
-        <div>
-          <h3 className="text-lg font-semibold text-customPink lg:mt-4">Quick Links</h3>
-          <ul className="mt-4 space-y-2 text-white">
-            <li>
-              <a href="/aboutUs" className="hover:text-customPink">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="/services" className="hover:text-customPink">
-                Services
-              </a>
-            </li>
-            {/* <li>
-              <a href="/testimonials" className="hover:text-customPink">
-                Testimonials
-              </a>
-            </li> */}
-            <li>
-              <a href="/contact" className="hover:text-customPink">
-                Contact Us
-              </a>
-            </li>
-          </ul>
-        </div>
+      </div>
 
-        {/* Contact Links */}
-        <div>
-          <h3 className="text-lg font-semibold text-customPink lg:mt-4">Contact Us</h3>
-          <ul className="mt-4 space-y-4 text-white">
-            <li>
-              <p className="flex items-center space-x-2">
-                <span></span>
-              </p>
-            </li>
-            <li>
-              <p className="flex items-center space-x-2">
-                <a href="mailto:davisbeulah07@gmail.com">davisbeulah07@gmail.com</a>
-              </p>
-            </li>
-            <li>
-              <p className="flex items-center space-x-2">
-                <span>
-                  Remote
-                  <br />
-                  Worldwide.
-                </span>
-              </p>
-            </li>
-          </ul>
-        </div>
+      {/* Social Icons */}
+      <div className="flex mt-10 space-x-4 pl-0 lg:pl-6">
+        <a
+          href="https://wa.me/2347014042999?text=Hi%2C%20I%27m%20interested%20in%20your%20services"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-customPink text-gray-900 p-2 rounded-full hover:bg-teal-500"
+        >
+          <FaWhatsapp />
+        </a>        <a href="https://x.com/niedavies" className="bg-customPink text-gray-900 p-2 rounded-full hover:bg-teal-500"><FaTwitter /></a>
+        <a href="https://www.linkedin.com/in/winnie-davis-1aa069246" className="bg-customPink text-gray-900 p-2 rounded-full hover:bg-teal-500"><FaLinkedinIn /></a>
+        <a href="#" className="bg-customPink text-gray-900 p-2 rounded-full hover:bg-teal-500"><FaInstagram /></a>
       </div>
 
       {/* Footer Bottom */}
@@ -110,6 +75,7 @@ Contact us for   <br /> website development,
         </p>
       </div>
     </footer>
+
   );
 };
 

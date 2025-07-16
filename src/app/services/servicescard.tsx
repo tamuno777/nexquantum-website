@@ -14,54 +14,44 @@ const Servicess = () => {
     });
   }, []);
   const services = [
-    {
-      title: "App Development ",
-      span: "Services",
-      description:
-        "ODD Network provides comprehensive App Development services designed to protect your business from digital threats. We offer custom Apps and  real-time support, network and data protection. we provide tailored employee App Developer training to help your team recognize and provide satandard applications . With ODD Network, you can have peace of mind knowing that your business is secure and standing out .",
-      stats: {
-        consultants: "5 Professional Consultants",
-        clients: "~150 Consultations made",
-      },
-      image: "/images/visualmahine.jpeg",
-      bgColor: "",
+  {
+    title: "Website Design & Development",
+    span: "Services",
+    description:
+      "At ODD Network, we craft modern, responsive websites tailored to reflect your brand and drive user engagement. From sleek landing pages to dynamic CMS-driven platforms, we blend clean UI design with performance optimized code to create digital experiences that convert. Whether you're launching a startup or scaling a business, our design-to-deployment process ensures speed, security, and scalability every step of the way.",
+    stats: {
+      developers: "5+ Expert Developers",
+      projects: "20+ Projects Delivered",
     },
-    {
-      title: "Website Development ",
-      span: "Development",
-      description:
-        "At ODD Network, we specialize in creating custom websites Development that are designed to meet your business needs and drive success. Our team of experts combines the latest technologies with innovative design to deliver high-quality, user-friendly solutions. Whether you're looking to build a responsive website, a mobile app, or a complex enterprise application, we focus on delivering seamless experiences that engage users and enhance functionality. From concept to launch, we ensure every project is optimized for performance, security, and scalability, helping your business stay ahead in the digital world.",
-      stats: {
-        developers: "5+ Expert Developers",
-        projects: "16 Ongoing Projects",
-      },
-      image: "/images/websitedev.avif",
-      bgColor: " ",
+    image: "/images/websitedev.avif",
+    bgColor: "",
+  },
+  {
+    title: "Mobile Development",
+    span: "Solutions",
+    description:
+      "ODD Network builds high performance mobile apps for iOS and Android that help you connect with customers on the go. We specialize in custom, cross-platform development that ensures fast, secure, and visually compelling user experiences. From MVPs to full-scale products, our team handles design, development, testing, and deployment , delivering intuitive apps that meet business goals and exceed user expectations.",
+    stats: {
+      engineers: "4 Dedicated Engineers",
+      platforms: "iOS & Android Supported",
     },
-    {
-      title: "Software ",
-      span: "Development",
-      description:
-        "At ODD Network, we provide tailored software development solutions to help businesses streamline operations and achieve their goals. Our team of skilled developers creates custom software applications that are robust, scalable, and user-centric. Whether you need a desktop application, enterprise software, or cloud-based solution, we focus on building systems that improve efficiency, drive innovation, and support your business growth. By using the latest technologies and best development practices, we ensure that every solution is secure, reliable, and optimized for performance, helping your business stay competitive in today’s fast-paced digital landscape.",
-      stats: {
-        developers: "5 In-House Developers",
-        companies: "45 Supported Companies",
-      },
-      image: "/images/appdev.jpeg",
+    image: "/images/appdev.jpeg",
+    bgColor: "",
+  },
+  {
+    title: "Web App Development (Contract-Based)",
+    span: "Development",
+    description:
+      "ODD Network offers contract-based web app development for businesses seeking robust, scalable digital platforms. Whether you're building a client dashboard, internal tool, or SaaS product, our team delivers fully customized solutions using modern frameworks and APIs. We collaborate closely to understand your objectives and deliver secure, high-performing applications that integrate seamlessly with your workflow all on your terms.",
+    stats: {
+      developers: "5 In-House Developers",
+      contracts: "16+ Contract Projects Delivered",
     },
-    // {
-    //   title: "App Development",
-    //   span: "Machines",
-    //   description:
-    //     "ODD Network offers App Development solutions to enhance your business’s IT infrastructure by providing flexible, scalable, and cost-efficient environments. Our App Development services allow you to run multiple operating systems and applications on a single physical machine, optimizing resource usage and improving efficiency. We handle the setup, management, and scaling of your App environments to meet your business needs. Whether you require virtualized servers, storage, or isolated environments for testing, our team ensures high performance, security, and seamless integration with your existing systems. With ODD Network, you can maximize your IT capabilities while reducing costs and complexity.",
-    //   stats: {
-    //     technicians: "5 Advanced Technicians",
-    //     support: "24/7 Availability",
-    //   },
-    //   image: "/images/visualmahine.jpeg",
-    //   bgColor: " ",
-    // },
-  ];
+    image: "/images/visualmahine.jpeg",
+    bgColor: "",
+  },
+];
+
 
   return (
     <section className="bg-white text-black pb-16 ">

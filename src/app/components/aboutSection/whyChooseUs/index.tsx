@@ -13,31 +13,32 @@ const WhyChooseUs = () => {
     });
   }, []);
   const features = [
-    {
-      icon: "/images/GCicon.svg",
-      title: "Global Experience",
-      description:
-        "ODD Network leverages global experience to provide tailored, innovative IT solutions for businesses worldwide.",
-    },
-    {
-      icon: "/images/Qicon.svg",
-      title: "Quality For Value",
-      description:
-        "ODD Network delivers high-quality IT solutions that maximize value, ensuring businesses achieve the best results with optimal efficiency.",
-    },
-    {
-      icon: "/images/Sicon.svg",
-      title: "Support",
-      description:
-        "ODD Network provides unwavering support, offering expert assistance to ensure seamless integration and ongoing success for businesses worldwide.",
-    },
-    {
-      icon: "/images/HSicon.svg",
-      title: "High Standards",
-      description:
-        "ODD Network adheres to the highest industry standards, ensuring reliable, secure, and innovative IT solutions that meet global best practices.",
-    },
-  ];
+  {
+    icon: "/images/GCicon.svg",
+    title: "Global Experience",
+    description:
+      "With a wealth of international expertise, ODD Network crafts innovative IT solutions tailored to meet diverse business challenges across the globe.",
+  },
+  {
+    icon: "/images/Qicon.svg",
+    title: "Quality For Value",
+    description:
+      "We deliver premium,quality IT services designed to maximize your return on investment, driving efficiency and tangible business outcomes.",
+  },
+  {
+    icon: "/images/Sicon.svg",
+    title: "Dedicated Support",
+    description:
+      "Our commitment extends beyond delivery , ODD Network offers expert, proactive support to ensure smooth integration and sustained success.",
+  },
+  {
+    icon: "/images/HSicon.svg",
+    title: "High Standards",
+    description:
+      "We uphold rigorous industry standards to provide reliable, secure, and cutting-edge IT solutions that align with global best practices.",
+  },
+];
+
 
   return (
     <section className="bg-gray-100 text-black mt-6 pb-16">

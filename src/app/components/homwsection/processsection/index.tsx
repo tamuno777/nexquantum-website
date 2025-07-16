@@ -13,35 +13,36 @@ const ProcessSection = () => {
     });
   }, []);
   const steps = [
-    {
-      id: 1,
-      title: " Consultation",
-      description:
-        "We start by deeply understanding your unique business needs, challenges, and objectives to ensure we deliver the right solution.",
-      image: "/images/consultation.jpg", 
-    },
-    {
-      id: 2,
-      title: " Customization",
-      description:
-        "Our team designs and develops tailored software, websites, and cybersecurity solutions that align perfectly with your business goals and target audience.",
-      image: "/images/customization.avif", 
-    },
-    {
-      id: 3,
-      title: "Implementation",
-      description:
-        "We integrate and deploy the solution smoothly, ensuring it works seamlessly within your existing infrastructure while minimizing disruptions.",
-      image: "/images/implemtation.jpg", 
-    },
-    {
-      id: 4,
-      title: " Support & Optimization",
-      description:
-        "We offer ongoing support and continuous optimization, ensuring your systems remain secure, efficient, and adaptable to your evolving business needs.",
-      image: "/images/supoort.webp", 
-    },
-  ];
+  {
+    id: 1,
+    title: "Discover & Consult",
+    description:
+      "We begin by understanding your vision, challenges, and goals laying the foundation for solutions that fit your brand and drive growth in the digital space.",
+    image: "/images/consultation.jpg",
+  },
+  {
+    id: 2,
+    title: "Strategic Customization",
+    description:
+      "Our experts craft bespoke digital products from websites and mobile apps to cybersecurity and infrastructure tailored to your industry and users.",
+    image: "/images/customization.avif",
+  },
+  {
+    id: 3,
+    title: "Seamless Implementation",
+    description:
+      "We deploy scalable, secure solutions with minimal downtime, integrating them into your workflow and ensuring high performance from day one.",
+    image: "/images/implemtation.jpg",
+  },
+  {
+    id: 4,
+    title: "Continuous Support",
+    description:
+      "Beyond launch, we provide proactive maintenance, performance monitoring, and upgrades to keep your digital ecosystem optimized and future-ready.",
+    image: "/images/supoort.webp",
+  }
+];
+
 
   return (
     <section className="bg-black text-white mt-6 py-6">

@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
-import { FaCheckCircle } from "react-icons/fa"; // Replace with your preferred check icon
+import { FaCheckCircle } from "react-icons/fa";
 import why from "../../../../../public/images/whyus.png";
-import signature from "../../../../../public/images/signature.png";
+// import signature from "../../../../../public/images/signature.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -11,8 +11,9 @@ const WhoWeAreSection = () => {
     AOS.init({
       duration: 1200,
       easing: "ease-out-cubic",
-      once: false, 
-      mirror: true,    });
+      once: false,
+      mirror: true,
+    });
   }, []);
   return (
     <section className="bg-gray-100 text-black  pb-16">
@@ -30,21 +31,22 @@ const WhoWeAreSection = () => {
             <span className="text-customPink" style={{ color: " #ed51c2" }}>
               ODD Network
             </span>
-            , we are a team of dedicated technology professionals passionate
-            about driving innovation and creating meaningful solutions.
+            , we are a collective of forward thinking technologists, designers, and
+            strategists committed to building impactful digital experiences that
+            redefine what&apos;s possible.
           </h1>
           <p className="mt-4 text-gray-400 leading-relaxed ">
-            With a commitment to excellence and a deep understanding of the
-            ever-changing digital landscape, we empower businesses to harness
-            the full potential of technology. Through expertise, creativity, and
-            attention to detail, we’ve become a trusted partner for businesses
-            looking to thrive in the modern digital era.
+            In a rapidly evolving digital world, we empower ambitious businesses to stay
+            ahead through tailored solutions that blend creative vision with cutting edge
+            technology. From sleek websites to scalable apps, our approach is rooted in
+            excellence, innovation, and an obsession with quality ,turning complex ideas
+            into seamless, smart, and stunning digital realities.
           </p>
         </div>
         {/* Image Section */}
         <div className="relative md:w-1/2 ">
           <img
-          ata-aos="zoom-in"
+            ata-aos="zoom-in"
             src={why.src}
             alt="Why ODD Network"
             className="w-full h-full object-cover rounded-lg"
@@ -63,8 +65,8 @@ const WhoWeAreSection = () => {
                 style={{ color: "rgb(0, 8, 135)" }}
               />
               <p>
-                We believe in your success and tailor technology to help achieve
-                your goals.
+                We believe in your vision and engineer technology that turns goals into scalable results.
+
               </p>
             </div>
             <div className="flex items-start gap-2">
@@ -73,8 +75,8 @@ const WhoWeAreSection = () => {
                 style={{ color: "rgb(0, 8, 135)" }}
               />
               <p>
-                Whether it’s custom websites, mobile apps,web application, or Software, we
-                deliver excellence.
+                From stunning UI designs to powerful websites, web apps, and mobile solutions — we deliver with precision and passion.
+
               </p>
             </div>
             <div className="flex items-start gap-2">
@@ -83,18 +85,19 @@ const WhoWeAreSection = () => {
                 style={{ color: "rgb(0, 8, 135)" }}
               />
               <p>
-                We take pride in collaborating closely with clients for tailored
-                solutions.
+                Collaboration is at our core. We work closely with you to create solutions that are as unique as your business.
+
               </p>
             </div>
           </div>
         </div>
 
         {/* Signature */}
-        <div className="text-center md:text-left">
+        <div className="flex flex-col gap-3">
+          <div className="text-center md:text-left">
           <p className="text-lg font-bold">Winnie Davis</p>
-          <p className="text-gray-400">CEO, ODD Network</p>
-          <div className="mt-4 flex items-center">
+          <p className="text-gray-400">Founder, ODD Network</p>
+          {/* <div className="mt-4 flex items-center">
             <p
               className="text-customPink font-handwriting text-2xl"
               style={{ color: " #ed51c2" }}
@@ -106,7 +109,25 @@ const WhoWeAreSection = () => {
               alt="signature"
               className="ml-4 w-16 h-auto object-contain"
             />
-          </div>
+          </div> */}
+        </div>
+        <div className="text-center md:text-left">
+          <p className="text-lg font-bold">Mercy Abani</p>
+          <p className="text-gray-400">Lead Designer, ODD Network</p>
+          {/* <div className="mt-4 flex items-center">
+            <p
+              className="text-customPink font-handwriting text-2xl"
+              style={{ color: " #ed51c2" }}
+            >
+              Winnie Davis
+            </p>
+            <img
+              src={signature.src}
+              alt="signature"
+              className="ml-4 w-16 h-auto object-contain"
+            />
+          </div> */}
+        </div>
         </div>
       </div>
     </section>

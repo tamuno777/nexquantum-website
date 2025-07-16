@@ -27,23 +27,15 @@ const MoreAbout = () => {
             At <span className="text-customPink">ODD Network ,</span>
           </h1>
           <p className="mt-4 text-black leading-relaxed ">
-            we are a team of dedicated technology professionals passionate about
-            driving innovation and creating meaningful solutions. With a
-            commitment to excellence and a deep understanding of the
-            ever-changing digital landscape, we empower businesses to harness
-            the full potential of technology.
+            we are a team of passionate technology experts committed to driving innovation and delivering impactful solutions. With deep industry knowledge and a forward-thinking mindset, we empower businesses to unlock the full potential of the digital world.
           </p>
           <p className="mt-4 text-black leading-relaxed ">
-            We take pride in our collaborative approach, working closely with
-            our clients to deliver tailored solutions that meet their unique
-            needs. Through a combination of expertise, creativity, and attention
-            to detail, ODD Network has become a trusted partner for businesses
-            looking to thrive in the modern digital era.
+            Collaboration is at the heart of everything we do. We partner closely with our clients to craft custom strategies and technologies tailored to their unique challenges and goals. Combining creativity, precision, and cutting-edge expertise, ODD Network is your trusted ally in navigating today’s fast evolving digital landscape.
           </p>
         </div>
         <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center ">
           <img
-          data-aos="zoom-in"
+            data-aos="zoom-in"
             src="/images/about.png"
             alt="Creative Designer"
             className="rounded-lg  "

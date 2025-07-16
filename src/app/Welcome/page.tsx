@@ -14,7 +14,7 @@ const Welcome = () => {
   useEffect(() => {
     (async () => {
       if (typeof window !== "undefined") {
-        const AOS = (await import("aos")).default; 
+        const AOS = (await import("aos")).default;
         AOS.init({
           duration: 1200,
           easing: "ease-out-cubic",
@@ -32,22 +32,24 @@ const Welcome = () => {
             <h1 className="font-sans font-bold tracking-tight text-4xl md:text-5xl xl:text-6xl text-white">
               Innovative IT Solutions for Secure{" "}
               <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
-                & Efficient Growth{" "}
+                & Efficient Growth
               </span>
               .
             </h1>
 
-            <p className="mt-6 text-white text-opacity-80 font-sans text-base leading-7 md:text-lg">
+            <p className="lg:my-6 my-6 text-white text-opacity-80 font-sans text-base leading-7 md:text-lg">
               At{" "}
               <span className="font-serif italic font-semibold">
                 ODD Network
               </span>
-              , we combine quantum computing, innovative design, and tailored IT
-              solutions to help your business thrive in a competitive world.
+              , we turn your ideas into sleek, high-performing websites powered by smart design, sharp code, and future ready tech. <br />
             </p>
-          </div>
+            <a href="https://wa.me/2347014042999?text=Hi%2C%20I%27m%20interested%20in%20your%20services"
+              target="_blank"
+              rel="noopener noreferrer" className=" bg-brandBlue font-semibold   px-6 py-2 rounded-lg my-4">Lets Connect</a>
+            <CardsSection />
 
-          <CardsSection />
+          </div>
         </div>
       </BackgroundWrapper>
 

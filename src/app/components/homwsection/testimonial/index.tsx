@@ -6,26 +6,30 @@ import "aos/dist/aos.css";
 const testimonials = [
   {
     id: 1,
-    name: "Sarah L",
+    name: "Sarah L.",
+    position: "Marketing Director, CreativEdge Agency",
     feedback:
-      "NexQuantum transformed our digital presence with a custom website and mobile app that perfectly fit our needs. Their team is professional, responsive, and truly understands business solutions.",
-    image: "/images/upwork.svg",
+      "ODD Network exceeded our expectations with a beautifully crafted website and intuitive mobile experience. Their attention to detail, design sensibility, and collaborative approach made the process seamless from start to finish.",
+    image: "/images/client/MARY-ADAISO.png"
   },
   {
     id: 2,
-    name: "Laura M",
+    name: "David K.",
+    position: "Product Manager, FinCore Solutions",
     feedback:
-      "Working with NexQuantum was a game-changer for our operations. Their custom software development streamlined our processes, saved us time, and increased productivity across the team.",
-    image: "/images/uber.svg",
+      "As a fast-moving startup, we needed a reliable dev partner. ODD Network delivered a robust web application under contract with zero compromise on quality or deadlines. Highly professional and technically sharp.",
+    image: "/images/client/JOHN-NIMI.png"
   },
-  // {
-  //   id: 3,
-  //   name: "Alex L",
-  //   feedback:
-  //     "Fantastic service! They took the time to understand our needs and delivered a tailored solution that worked seamlessly.",
-  //   image: "/images/client3.jpg", // Replace with your image path
-  // },
-];
+  {
+    id: 3,
+    name: "Chinaza O.",
+    position: "Founder, Zana Cosmetics",
+    feedback:
+      "We came to ODD Network with just an idea they turned it into a stunning online store and mobile app. The team was patient, innovative, and deeply invested in our brand’s growth.",
+    image: "/images/client/MARY-ADAISO.png"
+  }
+]
+
 
 const TestimonialSection = () => {
   useEffect(() => {
@@ -82,18 +86,22 @@ const TestimonialSection = () => {
 
           <div className="w-full max-w-xl bg-black p-8 rounded-xl shadow-lg">
             <div className="flex flex-col items-center">
-              <div className="bg-white rounded-full w-24 h-24 p-1 flex flex-col items-center  ">
+              <div className="bg-white rounded-full w-24 h-24 p-1 flex items-center justify-center overflow-hidden">
                 <img
                   src={testimonials[currentIndex].image}
                   alt={testimonials[currentIndex].name}
-                  className=" w-22 h-22rounded-full object-cover mb-6"
+                  className="w-full h-full object-cover rounded-full"
                 />
               </div>
+
               <h3 className="text-xl font-semibold text-customPink">
                 {testimonials[currentIndex].name}
               </h3>
-              <p className="text-white text-center">
-              &quot;{testimonials[currentIndex].feedback}&quot;
+              <p className="text-white text-sm text-center">
+                {testimonials[currentIndex].position}
+              </p>
+              <p className="text-white mt-4 text-center">
+                &quot;{testimonials[currentIndex].feedback}&quot;
               </p>
             </div>
           </div>

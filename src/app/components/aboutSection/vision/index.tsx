@@ -29,10 +29,8 @@ const VisionMissionSection = () => {
             <div className="text-center md:text-left">
               <h2 className="text-4xl font-bold mb-4">Our Vision</h2>
               <p className="text-white text-lg">
-                Our vision is to be a global leader in delivering transformative
-                IT solutions, redefining how businesses leverage technology to
-                achieve sustainable growth and innovation in an ever-evolving
-                digital landscape.
+                To be the catalyst for digital transformation worldwide ,empowering businesses of all sizes to innovate fearlessly, unlock new opportunities, and lead their industries with cutting-edge technology and bespoke solutions.
+
               </p>
             </div>
           </div>
@@ -52,10 +50,8 @@ const VisionMissionSection = () => {
             <div className="text-center md:text-left">
               <h2 className="text-4xl font-bold mb-4">Our Mission</h2>
               <p className="text-white text-lg">
-                At ODD Network, our mission is to empower businesses with
-                innovative IT solutions that bridge technology and business,
-                driving growth, efficiency, and long-term value through
-                collaboration and excellence.
+                At ODD Network, we are dedicated to delivering innovative, tailor-made IT solutions that seamlessly integrate with your business goals. Through close collaboration, relentless pursuit of excellence, and a passion for technology, we enable our clients to accelerate growth, increase efficiency, and thrive in a rapidly evolving digital world.
+
               </p>
             </div>
           </div>

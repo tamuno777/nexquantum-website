@@ -8,41 +8,43 @@ const industries = [
   {
     name: "Healthcare",
     description:
-      "Necquantum transforms the healthcare industry by providing cutting-edge digital solutions. From secure and efficient electronic health records (EHR) to intuitive patient management systems and advanced telemedicine platforms. Our focus on compliance with healthcare regulations ensures secure and scalable solutions tailored to hospitals, clinics, and telehealth startups. Let us power the next generation of healthcare innovation.",
+      "ODD Network empowers healthcare providers with secure, scalable, and intuitive digital solutions. From telehealth platforms and appointment systems to electronic health records, we help hospitals, clinics, and startups improve care delivery through compliant and patient centric technology.",
     icon: "💊",
     background: "bg-customPink",
   },
   {
     name: "Finance",
     description:
-      "Necquantum empowers financial institutions to stay ahead in a rapidly evolving market. Our suite of secure payment systems, advanced fraud detection technologies, and predictive data analytics solutions provides the foundation for smarter, safer financial transactions. From fintech startups to established banks, our solutions are tailored to meet diverse needs, ensuring compliance with financial regulations and enhancing customer trust.",
+      "We help financial institutions modernize with robust, secure systems from smart fintech platforms to fraud detection and payment automation. ODD Network builds trusted, regulation-ready solutions that power efficiency, transparency, and innovation across banking and fintech ecosystems.",
     icon: "💰",
     background: "bg-customPink",
   },
   {
     name: "E-commerce",
     description:
-      "At Necquantum, we help businesses thrive in the competitive e-commerce space by delivering custom-built, scalable platforms that cater to your unique requirements. Our services include seamless payment gateway integrations, personalized customer experiences powered by AI, and actionable analytics tools to drive growth. Whether you’re a startup or an established online retailer, we help optimize your operations and elevate your brand presence.",
+      "ODD Network builds high performance, conversion focused e-commerce solutions. From seamless checkout systems to personalized shopping experiences and inventory automation, we help brands grow online with platforms tailored for speed, scale, and sales.",
     icon: "🛒",
     background: "bg-customPink",
   },
   {
     name: "Education",
     description:
-      "Necquantum is revolutionizing the education sector with innovative digital tools that foster engagement and accessibility. We specialize in creating e-learning platforms, virtual classroom environments, and student management systems designed to meet the unique needs of schools, universities, and training institutions. With our solutions, learning becomes more interactive, collaborative, and effective, paving the way for the future of education.",
+      "We develop modern e-learning platforms, student portals, and virtual classrooms that elevate the learning experience. ODD Network supports schools, universities, and training organizations with engaging, accessible digital tools that scale with the future of education.",
     icon: "📚",
     background: "bg-customPink",
   },
   {
     name: "Travel & Tourism",
     description:
-      "Necquantum enhances the travel and tourism experience with state-of-the-art booking systems, intuitive travel apps, and immersive virtual tour technologies. Our solutions are designed to simplify the journey for travelers while boosting efficiency for tour operators, hotels, and travel agencies. From streamlining bookings to integrating AI-powered personalization, we create unforgettable experiences for customers while driving business growth.",
+      "ODD Network crafts tech solutions that enhance every step of the travel experience. From custom booking engines and travel apps to virtual tours and itinerary automation, we support agencies, hotels, and tourism startups in delivering seamless journeys that convert interest into loyalty.",
     icon: "✈️",
     background: "bg-customPink",
   },
 ];
 
+
 const IndustriesSection = () => {
+  const [aosKey, setAosKey] = useState(0);
   useEffect(() => {
     AOS.init({
       duration: 1200,
@@ -52,7 +54,10 @@ const IndustriesSection = () => {
     });
   }, []);
   const [selectedIndustry, setSelectedIndustry] = useState(industries[0]);
-
+useEffect(() => {
+    AOS.refresh(); 
+    setAosKey((prev) => prev + 1); 
+  }, [selectedIndustry]);
   return (
     <section className=" bg-gray-100">
       <div className="text-center mb-16 ">
@@ -98,6 +103,7 @@ const IndustriesSection = () => {
 
         {/* Selected Industry Details */}
         <div
+        key={aosKey}
           className="flex-1 bg-white p-8 rounded-lg shadow-lg"
           data-aos="flip-right"
         >

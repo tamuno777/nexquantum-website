@@ -1,10 +1,14 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import emailjs from 'emailjs-com';
 
 const ContactSection = () => {
+    const [loading, setLoading] = useState(false);
+    const [success, setSuccess] = useState(false);
+    const [error, setError] = useState("");
   useEffect(() => {
     AOS.init({
       duration: 1200,
@@ -13,6 +17,33 @@ const ContactSection = () => {
       mirror: true,
     });
   }, []);
+   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    setSuccess(false);
+    setError("");
+
+    const form = e.target as HTMLFormElement;
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+        form,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string
+      )
+      .then(() => {
+        setLoading(false);
+        setSuccess(true);
+        form.reset();
+        setTimeout(() => setSuccess(false), 4000); // Hide after 4s
+      })
+      .catch((err) => {
+        setLoading(false);
+        setError("Something went wrong. Please try again.");
+        console.error(err);
+      });
+  };
   return (
     <section className="bg-white text-black  pb-16">
       <div className="text-center mb-16">
@@ -36,21 +67,21 @@ const ContactSection = () => {
 
       <div className="flex flex-wrap lg:flex-nowrap gap-12 items-center px-6 lg:px-24 ">
         <div className="w-full lg:w-3/5 bg-transparent p-8 rounded-lg shadow-lg">
-          <form className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label
                 htmlFor="name"
                 className="block text-sm text-gray-400 mb-2"
               >
-                Your Name
+                Your Name*
               </label>
               <input
                 type="text"
                 id="name"
                 name="name"
+                required
                 placeholder="John Doe"
-                className="w-full  text-white rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-customPink"
-                style={{ backgroundColor: "black" }}
+                className="w-full   bg-gray-300  text-white rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-customPink"
               />
             </div>
 
@@ -65,9 +96,9 @@ const ContactSection = () => {
                 type="email"
                 id="email"
                 name="email"
+                required
                 placeholder="youremail@example.com"
-                className="w-full text-white rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-customPink"
-                style={{ backgroundColor: "black" }}
+                className="w-full  bg-gray-300  text-white rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-customPink"
               />
             </div>
 
@@ -82,18 +113,31 @@ const ContactSection = () => {
                 id="message"
                 name="message"
                 rows={5}
+                required
                 placeholder="Write your message here..."
-                className="w-full  text-white rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-customPink"
-                style={{ backgroundColor: "black" }}
+                className="w-full  bg-gray-300   text-black rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-customPink"
               ></textarea>
             </div>
 
             <button
               type="submit"
-              className="w-full bg-brandBlue text-white font-bold rounded-lg py-3 hover:bg-blue-700 focus:ring-2 focus:ring-customPink focus:outline-none"
+              className={`w-full font-bold rounded-lg py-3 transition-all duration-300 ${loading
+                ? "bg-gray-400 cursor-not-allowed"
+                : success
+                  ? "bg-blue-700"
+                  : "bg-brandBlue hover:bg-blue-800"
+                } text-white focus:outline-none focus:ring-2 focus:ring-customPink`}
+              disabled={loading}
             >
-              Send Message
+              {loading
+                ? "Sending..."
+                : success
+                  ? "Message Sent!"
+                  : "Send Message"}
             </button>
+            {error && (
+              <p className="text-sm text-red-600 -mt-4">{error}</p>
+            )}
           </form>
         </div>
 
@@ -103,7 +147,7 @@ const ContactSection = () => {
             <FaPhoneAlt className="text-brandBlue text-2xl" />
 
             <div>
-              <h3 className="text-lg font-semibold mb-2">+1 (483) 299 1400</h3>
+              <h3 className="text-lg font-semibold mb-2">+234 7014042999</h3>
               <p className="text-gray-400">
                 Call us directly if you need any urgent help. Our agents will
                 help you.
@@ -116,7 +160,7 @@ const ContactSection = () => {
 
             <div>
               <h3 className="text-lg font-semibold mb-2">
-                support@company.com
+                oddnetwork.tech@gmail.com
               </h3>
               <p className="text-gray-400">
                 Email us directly if you need any help. Our agents will assist

@@ -7,12 +7,12 @@ import 'aos/dist/aos.css';
 const Card = ({ Icon, title, description }: { Icon: React.ElementType; title: string; description: string }) => {
   useEffect(() => {
     AOS.init({
-      duration: 1200, 
-      easing: 'ease-out-cubic', 
-      once: true, 
+      duration: 1200,
+      easing: 'ease-out-cubic',
+      once: true,
     });
   }, []);
-  
+
   return (
     <div className="relative flex flex-col items-center bg-gradient-to-b from-[#6125B2] to-[#1A0F40] rounded-xl text-center shadow-lg max-w-[16rem] p-4">
       {/* Icon */}
@@ -26,6 +26,12 @@ const Card = ({ Icon, title, description }: { Icon: React.ElementType; title: st
       </div>
       {/* Bottom Fade */}
       <div className="absolute inset-x-0 bottom-0 h-6 bg-gradient-to-t from-[#1A0F40] to-transparent rounded-b-xl"></div>
+      <a
+        href="/services"
+        className="text-white text-sm my-2 hover:decoration-brandBlue underline underline-offset-2 decoration-white"
+      >
+        Learn More &gt;
+      </a>
     </div>
   );
 };
@@ -36,23 +42,22 @@ const CardsSection = () => {
       <div className="flex flex-wrap justify-center gap-6">
         {/* Cards */}
         <Card
-        data-aos="fade-up"
+          data-aos="fade-up"
           Icon={FaNetworkWired}
-          title="Consulting"
-          description="At ODD Network, we believe strategic IT consulting can unlock your business’s potential, driving growth and efficiency through tailored solutions in technology ."
+          title="Website Design & Development"
+          description="We craft visually striking, responsive websites that blend creative design with modern code ensuring your brand stands out and performs across all platforms."
         />
         <Card
-        data-aos="fade-up"
+          data-aos="fade-up"
           Icon={FaCode}
-          title="Software Development"
-          description="At ODD Network, we specialize in custom software development including website creation, delivering tailored solutions that streamline operations, enhance efficiency, and drive growth for your business."
+          title="Mobile Development"
+          description="We develop high-quality mobile apps for iOS and Android built for performance, scalability, and user engagement across the digital landscape."
         />
         <Card
-        data-aos="fade-up"
+          data-aos="fade-up"
           Icon={FaDesktop}
-          title="Website Devlopment"
-          description= "At ODD Network, we harness the power of technology in creating custom websites  to deliver scalable, efficient, high converting  and secure solutions that empower your business to operate seamlessly from anywhere, ensuring productivity and innovation without boundaries."
-          // "At ODD Network, we create custom websites that are visually stunning, user-friendly, and optimized for performance, helping your business make a lasting online impact."
+          title="Web App Development (Contract-Based)"
+          description="Need a flexible dev partner? We build robust web applications under contract ideal for startups, agencies, or enterprises looking to scale fast with expert help."
         />
       </div>
     </div>
